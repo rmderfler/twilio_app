@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: twilio_development
+
+test:
+  adapter: postgresql
+  database: twilio_test

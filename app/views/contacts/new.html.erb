@@ -1,0 +1,13 @@
+<h1>Add a Contact</h1>
+
+<%= form_for @contact do |f| %>
+  <div class="contact">
+    <%= f.text_field :name, :placeholder => "name" %>
+  </div>
+  <div class="contact">
+    <%= f.text_field :phone, :placeholder => "phone" %>
+  </div>
+  <div class="contact">
+    <%= f.submit :class => "btn btn-danger", :value => "submit" %>
+  </div>
+<% end %>
