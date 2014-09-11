@@ -23,10 +23,12 @@ ActiveRecord::Schema.define(version: 20140911035303) do
     t.datetime "updated_at"
   end
 
-  create_table "mailings", force: true do |t|
-    t.integer "message_id"
-    t.integer "contact_id"
-  end
 
+  create_table "messages", force: true do |t|
+    t.string "to"
+    t.string "from"
+    t.text   "body"
+    t.text   "status"
+  end
 
 end
